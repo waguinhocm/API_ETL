@@ -1,9 +1,8 @@
-from dotenv import load_dotenv
-
 import functions as fc
 import os
 import pandas as pd
 import json
+from dotenv import load_dotenv
 from google import genai
 
 load_dotenv()
@@ -18,7 +17,7 @@ print(users_ids)
 users = [user for id in users_ids if (user := fc.get_user(id)) is not None]
 print(json.dumps(users, indent=2))
 
-chat = client.chats.create(model="gemini-2.5-flash")
+chat = client.chats.create(model="gemini-3.5-flash-lite")
 
 print("--- Chat com Gemini Iniciado (digite 'sair' para encerrar) ---")
 
