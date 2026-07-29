@@ -1,4 +1,7 @@
-dotenv
-pandas
-google-genai
-requests
+dotenv==0.9.9
+google-genai==2.14.0
+numpy==2.5.1
+openai==2.49.0
+pandas==3.0.5
+python-dotenv==1.2.2
+requests==2.34.2
